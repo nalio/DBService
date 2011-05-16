@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceType name="DBServiceType" factoryClass="com.progress.codeshare.esbservice.db.DBService"
+        xmlns="http://www.sonicsw.com/sonicxq">
+    <validParams>
+        <init>
+            <stringParam name="jdbcDriver" required="true"/>
+            <stringParam name="password" required="true"/>
+            <stringParam name="url" required="true"/>
+            <stringParam name="username" required="true"/>
+        </init>
+        <runtime>
+            <stringParam name="input"/>
+            <stringParam name="mode"/>
+            <stringParam name="sqlFile"/>
+			<stringParam name="defaultProgress"/>
+        </runtime>
+    </validParams>
+</serviceType>
